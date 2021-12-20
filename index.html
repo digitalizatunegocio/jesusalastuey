@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Personal</title>
-    <link rel="stylesheet" type="text/css" href="acceso.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="img/Logo.jpg">
@@ -28,12 +26,12 @@
                  <div class="foto d-none d-md-block col-md-6 mt-0" style="padding-top: 0px; margin-left: 40px;">
                             <div class="text-right">
                             <br>
-                            <img src="img/Fondo_Oficina.svg"  width="800" height="600" alt="" style="border-radius:8px">
+                            <img src="img/Fondo_Oficina.jpg" alt="" >
                             </div>
                 </div>
         
-                <div class="formulario col-10 col-md-5 my-3 ml-5">
-                        <form action="registrar.php" method="POST"><br>
+                <div class="formulario col-11 col-md-5 ml-4">
+                        <form method="POST"><br>
                                 <div class="text-right">
                                 <img src="img/Logo.jpg" width="80" alt="" >
                                 </div><br>
@@ -41,7 +39,7 @@
                                 <input type="text" name="name" placeholder="Nombre completo" style="margin-bottom: 15px">
                                 <input type="email" name="email" placeholder="Email" style="margin-bottom: 15px">
                                 <input type="submit" name="register"  value="Acceso" class="btn btn-outline-secondary w-100">
-                                <br><br><br>
+                                <br><br>
                                 <p class="text-center text-muted"><small>iniciar sesión con:</small></p>
                                 <div class="row">
                                         <div class="col">
@@ -73,11 +71,12 @@
                         <?php 
                         include("registrar.php");
                         ?>     
-                </div> 
+                </div>
          </div>         
 </div>
 
 </body>
+
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.js"></script>
