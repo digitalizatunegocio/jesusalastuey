@@ -9,8 +9,8 @@
         {
             "type": "pwa-msedge",
             "request": "launch",
-            "name": "index.html",
-            "file": "c:\\xampp\\htdocs\\WebPersonal\\index.html"
+            "name": "index.php",
+            "file": "c:\\xampp\\htdocs\\WebPersonal\\index.php"
         }
     ]
 }

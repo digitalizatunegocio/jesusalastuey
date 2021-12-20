@@ -1,3 +1,7 @@
+<?php
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" type="image/x-icon" href="Logo.jpg"/>
+        <link rel="icon" type="image/x-icon" href="img/Logo.jpg"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet"> 
@@ -392,7 +396,10 @@
                 <textarea class="controls" name="comentarios" id="comentarios" rows=4 cols="30" placeholder="Mensaje:"></textarea><br><br><br>
                 <input class="btn btn-white w-75" type="submit" name="enviar" value="Enviar"><br><br><hr>      
         </fieldset>
-        </form>                
+        </form>
+        <?php 
+        include("formulario.php");
+        ?>                 
     </section> 
 </div>
 
@@ -419,3 +426,7 @@
     
 </body>
 </html>
+
+<?php
+ob_end_flush();
+?>

@@ -7,9 +7,8 @@ $baseDeDatos="webpersonal";
 
 $conexion=mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
 if(!$conexion){echo"Error en la Conexion con el Servidor";}
-?>
 
-<?php
+
 if (isset($_POST['enviar'])) {
     $id = rand(1,99);
     $nombre = $_POST["nombre"];
@@ -22,6 +21,7 @@ $consulta = "INSERT INTO visitantes VALUES(null,'$nombre','$correo','$telefono',
 mysqli_query($conexion, $consulta);
 mysqli_close($conexion);
 }
+
 
 
 $destino = "jaalastuey@gmail.com";
@@ -39,7 +39,7 @@ $mensajeCompleto ="Mensaje de: " .  $nombre . "\n Correo electrónico: " . $corr
 
 mail($destino,$asunto,$mensajeCompleto);
 
-echo "<script>setTimeout(\"location.href='index.html'\", 1000)</script>";
+echo "<script>setTimeout(\"location.href='web.html'\", 1000)</script>";
 
 ?>
 
